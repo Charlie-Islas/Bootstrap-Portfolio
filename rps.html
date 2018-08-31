@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 2
+  </title>
+</head>
+
+<body>
+
+  <div id="game">
+
+    <div id ="mainBody">
+
+        <div id ="welcome">
+            Hey there! Start playing by pressing r, p, or s.
+        
+        </div>
+
+        <div id="scores">
+
+            <p>Your ties are: <span id="yourTies">0</span></p>
+            <p>Your wins are: <span id="yourWins">0</span></p>
+            <p>Your defeats are: <span id="yourDefeats">0</span></p>
+
+        </div>
+
+
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+
+    // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+    var computerChoices = ["r", "p", "s"];
+    var ties=0;
+    var wins=0;
+    var lose=0;
+
+    function showDiv(){
+
+        document.getElementById("scores").style.visibility='hidden';
+    }
+
+    
+
+    // This function is run whenever the user presses a key.
+    document.onkeyup = function(event) {
+
+      // Determines which key was pressed.
+      var userGuess = event.key;
+
+      // Randomly chooses a choice from the options array. This is the Computer's guess.
+      var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+      // Alerts the key the user pressed (userGuess).
+      alert("User guess: " + userGuess);
+
+      // Alerts the Computer's guess.
+      alert("Computer guess: " + computerGuess);
+
+      if(userGuess===computerGuess){
+
+        ties++;
+
+      }
+
+      else if (userGuess==="r"&&computerGuess==="p"){
+
+        lose++;
+
+      }
+
+      else if(userGuess==="r"&&computerGuess==="s"){
+
+        wins++;
+
+      }
+
+      else if(userGuess==="p"&&computerGuess==="r"){
+
+        wins++;
+
+      }
+
+      else if(userGuess==="p"&&computerGuess==="s"){
+
+        lose++;
+
+      }
+
+      else if(userGuess==="s"&&computerGuess==="p"){
+
+        wins++;
+
+      }
+
+      else if(userGuess==="s"&&computerGuess==="r"){
+
+        lose++;
+
+     }
+
+
+    function showDiv(){
+
+    document.getElementById("scores").style.visibility='visible';
+
+    }
+    
+    var textTies = document.getElementById("yourTies");
+    var textWins = document.getElementById("yourWins");
+    var textDefeats = document.getElementById("yourDefeats");
+    var textWelcome = document.getElementById("welcome");
+
+    textTies.textContent=ties;
+    textWins.textContent=wins;
+    textDefeats.textContent=lose;
+    textWelcome.textContent="Keep playing by pressing r, p or s again. Go on defeat that computer!";
+
+
+
+
+      
+
+    };
+  </script>
+
+</body>
+
+</html>
