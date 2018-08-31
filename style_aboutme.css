@@ -1,0 +1,98 @@
+body{
+
+    width: 100%;
+    background-image: url("images/gravel.png");
+    margin: 0;
+}
+
+
+h1{
+
+    background-color: #4aaaa5;
+    color: white;
+    margin: 0;
+    padding: 15px;
+    border: 0;
+    font-weight: bold;
+}
+
+.menu{
+
+    padding:0;
+
+}
+
+#mainContainer h1{
+
+    background-color: white;
+    font-weight: bold;
+    color: #4aaaa5;
+    margin-left:0;
+    padding:0;
+
+}
+
+.navbar{
+
+    padding: 0!important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 3px solid gray;
+    margin-bottom: 25px;
+}
+
+.navbar-brand {
+
+
+    padding:0;
+}
+
+#mainContainer{
+
+    background-color:white;
+    margin-bottom:100px;
+}
+
+.container > .row > .col-md{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-bottom:5px solid #DCDCDC;
+    padding: 15px;
+    margin-bottom: 15px;
+
+}
+
+.img-thumbnail{
+
+  height: 350px;
+  width: auto;
+   float: left;
+   margin-right: 15px;
+
+}
+
+#profilePic{
+
+    float:left;
+}
+
+p{
+    font-family: arial, Arial, Helvetica, sans-serif;
+    color: #777777;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+footer{
+
+  
+    background-color: #666666; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-top: 5px solid #4aaaa5;
+    font-size: 14px;
+    padding-bottom: 25px;
+
+
+}
